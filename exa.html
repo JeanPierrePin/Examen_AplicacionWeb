@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vehiculos</title>
+
+<link rel="stylesheet" href="exa.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<head>
+<body>
+   
+<body>
+
+    <main>
+      
+        <div class="parent">
+            <h3 class=""><i class=""></i> &nbsp; Alquiler de Vehículos</h3> <br><br>
+                        
+            <form method="get" class="form-register"action="" ss="formulario" id="formulario">
+                <fieldset class="form_personal">
+                    <legend><i class=""></i> &nbsp;  Datos del Vehículos</legend>
+                    <div class="formulario__grupo" id="grupo__codigo">
+                        <label class="">Codigo: </label>
+                        <div class="formulario__grupo-input">
+                          <input class="controls" type="text" aria-label="codigo" name="codigo"  id="codigo" placeholder="12345"   > 
+                          <span class="formulario__input-error">El codigo no es valido ingresado no es valido.</span><br/>
+                        </div>
+                    </div>
+                    <div class="formulario__grupo" id="grupo__marca">
+                        <label class="">Marca: </label>
+                        <div class="formulario__grupo-input">
+                          <input class="controls" type="text" aria-label="marca" name="marca"  id="marca" placeholder="Ferrari"   > 
+                          <span class="formulario__input-error">La marca ingresado no es valido.</span><br/>
+                        </div>
+                    </div>
+                    <div class="formulario__grupo" id="grupo__modelo">
+                        <label class="">Modelo: </label>
+                        <div class="formulario__grupo-input">
+                          <input class="controls" type="text" aria-label="modelo" name="modelo"  id="modelo" placeholder="Ingrese el modelo... "  > 
+                          <span class="formulario__input-error">Ingrese un modelo.</span><br/>
+                        </div>
+                    </div>
+                    <div class="formulario__grupo" id="grupo__año">
+                        <label class="">Año: </label>
+                        <div class="formulario__grupo-input">
+                          <input class="controls" aria-label="publicacion" name="año"  id="año" placeholder="2021"  > 
+                          <span class="formulario__input-error">Ingrese el año del vehículo</span><br/>
+                        </div>
+                    </div>
+                    <label>F inicio</label><input type="date" id="fechaini"  >
+                    <label>F termino</label><input type="date" id="fechafin"  >
+                    
+                    <p class="text-center" style="margin-top: 20px;">
+                         <button class="botons" onclick="ValidarFiltroDeFechas('fechaini','fechafin');"  type="submit"  > Enviar</button> 
+                         <div class="notification">Actualizado</div>
+                    </p>
+
+                            </form>
+</main>
+    <script src="exa.js" type="text/javascript"></script>
+    
+</body>
+</html>
